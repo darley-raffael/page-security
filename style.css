@@ -1,0 +1,135 @@
+:root{
+    font-size: 62.5%;
+    --bc-body-color: #2F2E41;
+    --ff-body-header: 'JetBrains Mono', monospace;
+    --ff-paragraph: 'Open Sans', sans-serif ;
+    --fc-body-header: #FFFFFF;
+    --fc-paragraph:#C2C2C2;
+    --bc-span-itens: #00BFA6;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--bc-body-color);
+}
+.all-page{
+    margin: 7.1rem 10rem 21.3rem;
+}
+
+header{
+
+    font-family: var(--ff-body-header);
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6.4rem;
+    font-size: 1.4rem;
+    
+
+}
+li{
+    list-style-type: none;
+    padding: 3px 25px;
+    border-radius: 4px;
+    position: relative;
+}
+/* ANIMAÇÃO NA NAV BAR */
+
+li:after{
+    position: absolute;
+    content: "";
+    background-color: var(--bc-span-itens);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+}
+a:hover{
+    color: var(--bc-span-itens);
+}
+li:hover:after{
+    width: 100%;
+    transition: all .3s;
+}
+
+
+.nav-itens{
+    color: var(--fc-body-header);
+    text-decoration: none;
+    
+}
+
+main{
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 82px;
+   
+}
+
+.content{
+    width: 615px;
+    text-align: center;
+    
+}
+.content-img{
+    width: 450px;
+}
+
+h1{
+    font-family: var(--ff-body-header);
+    font-size: 3.6rem;
+    color: var(--fc-body-header);
+    margin-bottom: 60px;
+}
+p{
+    font-family: var(--ff-paragraph);
+    color: var(--fc-paragraph);
+    padding: 10px;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+}
+
+span{
+    color:var(--bc-span-itens);
+}
+
+footer{
+  
+position: absolute;
+width: 568px;
+height: 55px;
+left: 356px;
+bottom: 6%;
+text-align: center;
+}
+.p-footer{
+    font-size: 1.4rem;
+}
+.divider{
+    border-top: var(--bc-span-itens) solid;
+}
+.bi{
+    font-size: 20px;
+    margin-left: 20px;
+    margin-bottom: 4%;
+}
+
+
+
+#cadeado{
+    position: absolute;
+    left: 2%;
+    bottom: 2%;
+}
