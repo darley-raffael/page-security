@@ -28,6 +28,13 @@ header{
     justify-content: space-between;
    
 }
+.img-logo{
+    cursor: pointer;
+    transition: all linear 200ms;
+}
+.img-logo:hover{
+    transform: scale(1.1);
+}
 
 ul{
     display: flex;
@@ -42,11 +49,15 @@ li{
     list-style-type: none;
     padding: 3px 25px;
     border-radius: 4px;
-    position: relative;
 }
 /* ANIMAÇÃO NA NAV BAR */
+.nav-itens{
+    position: relative;
+    color: var(--fc-body-header);
+    text-decoration: none;
+}
 
-li:after{
+.nav-itens:after{
     position: absolute;
     content: "";
     background-color: var(--bc-span-itens);
@@ -55,20 +66,14 @@ li:after{
     left: 0;
     bottom: -10px;
 }
-a:hover{
+.nav-itens:hover{
     color: var(--bc-span-itens);
 }
-li:hover:after{
+.nav-itens:hover:after{
     width: 100%;
     transition: all .3s;
 }
 
-
-.nav-itens{
-    color: var(--fc-body-header);
-    text-decoration: none;
-    
-}
 
 main{
     margin-top: 10rem;
@@ -100,9 +105,8 @@ p{
     font-size: 1.8rem;
     line-height: 2.8rem;
 }
-
 span{
-    color:var(--bc-span-itens);
+    color: var(--bc-span-itens);
 }
 
 footer{
@@ -121,11 +125,16 @@ text-align: center;
     border-top: var(--bc-span-itens) solid;
 }
 .bi{
+    color:var(--bc-span-itens);
     font-size: 20px;
-    margin-left: 20px;
+    margin-left: 30px;
     margin-bottom: 4%;
+    transition: all linear 200ms;
+   
 }
-
+i:hover{
+   font-size: 26px;
+}
 
 
 #cadeado{
